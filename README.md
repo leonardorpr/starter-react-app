@@ -1,6 +1,6 @@
 # eBeauty
 
-Olá! Este é o repositório do eBeauty.
+Olá! Este é o repositório do Painel do Profissional do eBeauty.
 
 ## Pré-requisitos
 
@@ -12,8 +12,8 @@ Olá! Este é o repositório do eBeauty.
 Você precisará clonar o repositório:
 
 ```
-git clone git@github.com:Stero-Enterprise/ebeauty-painel.git
-cd ebeauty-painel/
+git clone git@github.com:leonardorpr/ebeauty-painel-profissional.git
+cd ebeauty-painel-profissional/
 ```
 
 Com o repositório em mãos, basta instalar as dependências:
