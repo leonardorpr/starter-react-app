@@ -40,7 +40,24 @@
         "groups": [
           "/^react/",
           "module",
-          "/^@shared/",
+          "/^configs/",
+          "/^assets/",
+          "/^routes/",
+          [
+            "/^services/",
+            "/^api/"
+          ],
+          [
+            "/^store/",
+            "/^slices/",
+            "/^sagas/"
+          ],
+          "/^hooks/",
+          "/^interfaces/",
+          "/^utils/",
+          "/^forms/",
+          "/^screens/",
+          "/^components/",
           [
             "parent",
             "sibling",

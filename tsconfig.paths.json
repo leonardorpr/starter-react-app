@@ -9,7 +9,7 @@
         "app/routes"
       ],
       "screens": [
-        "app/screens/"
+        "app/screens"
       ],
       "assets": [
         "assets"
