@@ -1,0 +1,70 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "components": [
+        "app/components"
+      ],
+      "routes": [
+        "app/routes"
+      ],
+      "screens": [
+        "app/screens/"
+      ],
+      "assets": [
+        "assets"
+      ],
+      "configs": [
+        "configs"
+      ],
+      "forms": [
+        "core/forms"
+      ],
+      "hooks": [
+        "core/hooks"
+      ],
+      "interfaces": [
+        "core/interfaces"
+      ],
+      "services": [
+        "core/services"
+      ],
+      "api": [
+        "core/services/api"
+      ],
+      "store": [
+        "core/store"
+      ],
+      "sagas": [
+        "core/store/sagas"
+      ],
+      "slices": [
+        "core/store/slices"
+      ],
+      "utils": [
+        "utils"
+      ],
+    },
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react"
+  },
+  "include": [
+    "src"
+  ]
+}
