@@ -1,6 +1,6 @@
-# eBeauty
+# Starter React App
 
-Olá! Este é o repositório do Painel do Profissional do eBeauty.
+Olá! Este é o repositório do Starter React App.
 
 ## Pré-requisitos
 
@@ -12,13 +12,14 @@ Olá! Este é o repositório do Painel do Profissional do eBeauty.
 Você precisará clonar o repositório:
 
 ```
-git clone git@github.com:leonardorpr/ebeauty-painel-profissional.git
-cd ebeauty-painel-profissional/
+git clone git@github.com:leonardorpr/starter-react-app.git
+cd starter-react-app/
 ```
 
-Com o repositório em mãos, basta instalar as dependências:
+Com o repositório em mãos, basta adicionar o URL do seu projeto e instalar as dependências:
 
 ```
+git remote set-url origin REPO_URL
 yarn install
 ```
 

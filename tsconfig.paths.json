@@ -5,44 +5,86 @@
       "components": [
         "app/components"
       ],
+      "components/*": [
+        "app/components/*"
+      ],
       "routes": [
         "app/routes"
       ],
+      "routes/*": [
+        "app/routes/*"
+      ],
       "screens": [
-        "app/screens"
+        "app/screens",
+      ],
+      "screens/*": [
+        "app/screens/*"
       ],
       "assets": [
         "assets"
       ],
+      "assets/*": [
+        "assets/*"
+      ],
       "configs": [
         "configs"
+      ],
+      "configs/*": [
+        "configs/*"
       ],
       "forms": [
         "core/forms"
       ],
+      "forms/*": [
+        "core/forms/*"
+      ],
       "hooks": [
         "core/hooks"
+      ],
+      "hooks/*": [
+        "core/hooks/*"
       ],
       "interfaces": [
         "core/interfaces"
       ],
+      "interfaces/*": [
+        "core/interfaces/*"
+      ],
       "services": [
         "core/services"
+      ],
+      "services/*": [
+        "core/services/*"
       ],
       "api": [
         "core/services/api"
       ],
+      "api/*": [
+        "core/services/api/*"
+      ],
       "store": [
         "core/store"
+      ],
+      "store/*": [
+        "core/store/*"
       ],
       "sagas": [
         "core/store/sagas"
       ],
+      "sagas/*": [
+        "core/store/sagas/*"
+      ],
       "slices": [
         "core/store/slices"
       ],
+      "slices/*": [
+        "core/store/slices/*"
+      ],
       "utils": [
         "utils"
+      ],
+      "utils/*": [
+        "utils/*"
       ],
     },
     "target": "es5",
