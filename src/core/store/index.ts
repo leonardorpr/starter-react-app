@@ -8,10 +8,7 @@ import rootReducer from './slices';
 
 const sagaMiddleware = createSagaMiddleware();
 
-const middleware = [
-  ...getDefaultMiddleware({ serializableCheck: false }),
-  sagaMiddleware,
-];
+const middleware = [...getDefaultMiddleware({ serializableCheck: false }), sagaMiddleware];
 
 const persistConfig = {
   key: 'StarterReactApp',

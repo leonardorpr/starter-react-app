@@ -3,10 +3,7 @@
     "browser": true,
     "es6": true
   },
-  "extends": [
-    "plugin:react/recommended",
-    "airbnb"
-  ],
+  "extends": ["plugin:react/recommended", "airbnb", "prettier"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -22,15 +19,31 @@
   "plugins": [
     "react",
     "@typescript-eslint",
-    "eslint-plugin-import-helpers"
+    "eslint-plugin-import-helpers",
+    "prettier"
+  ],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": [2, { "args": "none" }]
+      }
+    }
   ],
   "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "printWidth": 150
+      }
+    ],
     "react/jsx-filename-extension": [
       "error",
       {
-        "extensions": [
-          ".tsx"
-        ]
+        "extensions": [".tsx"]
       }
     ],
     "import-helpers/order-imports": [
@@ -39,30 +52,16 @@
         "newlinesBetween": "always",
         "groups": [
           "/^react/",
+          "/^styled-components/",
           "module",
-          "/^configs/",
-          "/^assets/",
-          "/^routes/",
-          [
-            "/^services/",
-            "/^api/"
-          ],
-          [
-            "/^store/",
-            "/^slices/",
-            "/^sagas/"
-          ],
-          "/^hooks/",
-          "/^interfaces/",
-          "/^utils/",
+          ["/^configs/", "/^assets/", "/^routes/"],
+          ["/^services/", "/^api/"],
+          ["/^store/", "/^slices/", "/^sagas/"],
+          ["/^hooks/", "/^interfaces/", "/^utils/"],
           "/^forms/",
           "/^screens/",
           "/^components/",
-          [
-            "parent",
-            "sibling",
-            "index"
-          ]
+          ["parent", "sibling", "index"]
         ],
         "alphabetize": {
           "order": "asc",
@@ -88,10 +87,7 @@
   },
   "settings": {
     "import/parsers": {
-      "@typescript-eslint/parser": [
-        ".ts",
-        ".tsx"
-      ]
+      "@typescript-eslint/parser": [".ts", ".tsx"]
     },
     "import/resolver": {
       "typescript": {}

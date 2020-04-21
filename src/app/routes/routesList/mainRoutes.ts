@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 import { IConfigureRoutes } from 'interfaces/IConfigureRoutes';
 
 import SignIn from 'screens/SignIn';
